@@ -5,7 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:run": "npx cypress run",
-    "dashboard": "npx cypress open"
+    "dashboard": "npx cypress open",
+    "cy:open-dev": "npx cypress open --env userName=jalgtest@gmail.com,password=test",
+    "cy:open-val": "npx cypress open --env userName=jalgtest123@gmail.com,password=jalgtest123",
+    "cy:open_process": "npx cypress open --env username=$DB_USERNAME,password=$PASSWORD"
   },
   "author": "",
   "license": "ISC",
