@@ -9,7 +9,7 @@ describe('test with backend', () => {
     cy.loginWithApi();
   });
 
-  it('verify correct request and response (API)', () => {
+  it('verify correct request and response (API)',    () => {
     cy.intercept(
       'POST',
       Cypress.env("apiUrl") +'/api/articles/'
